@@ -27,11 +27,6 @@ export default function Navigation() {
                             className="h-auto w-20 rounded-full object-cover scale-75 bg-white"
                             alt='company logo'
                         />
-                        <img
-                            alt=""
-                            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                            className="h-8 w-auto"
-                        />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
