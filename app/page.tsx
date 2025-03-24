@@ -1,5 +1,6 @@
 
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import Image from 'next/image';
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import {
   ArrowPathIcon,
@@ -96,6 +97,13 @@ export default function Page() {
       <main>
         {/* Hero section */}
         <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
+          <Image
+            src="/assets/landing.webp"
+            width={500}
+            height={500}
+            className="absolute inset-0 -z-10 size-full object-cover"
+            alt="landing page image of handy man"
+          />
           {/* <img
             alt=""
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
@@ -135,7 +143,7 @@ export default function Page() {
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                   >
                     Get started
                   </a>
@@ -385,7 +393,7 @@ export default function Page() {
                     tier.featured
                       ? 'bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500'
                       : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600',
-                    'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
+                    'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
                   )}
                 >
                   Get started today
