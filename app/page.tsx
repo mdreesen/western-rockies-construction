@@ -122,13 +122,13 @@ export default function Page() {
             src="/assets/landing4.webp"
             width={500}
             height={500}
-            className="absolute inset-0 -z-10 size-full object-cover brightness-60"
+            className="absolute inset-0 -z-10 size-full object-cover brightness-85"
             alt='company logo'
           />
-          <div className="py-18 sm:py-20 lg:pb-40">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="py-8 sm:py-20 lg:pb-40">
+            <div className="mx-auto max-w-7xl">
               <div className="mx-auto max-w-2xl text-center">
-                <div className='h-full w-full px-8 py-4 flex justify-center' aria-hidden="true">
+                <div className='h-full w-full py-4 flex justify-center' aria-hidden="true">
                   <Image
                     src="/assets/logo_transparent.webp"
                     width={500}
@@ -137,7 +137,7 @@ export default function Page() {
                     alt='company logo'
                   />
                 </div>
-                <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-5xl">
+                <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-4xl">
                   Built to Last, Built to Perform
                 </h1>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -161,7 +161,7 @@ export default function Page() {
         </div>
 
         {/* Feature section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+        <div className="mx-auto mt-22 max-w-7xl px-6 sm:mt-26 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base/7 font-semibold text-[#4F714D]">Got you covered</h2>
             <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
