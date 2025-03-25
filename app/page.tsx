@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { CheckIcon } from '@heroicons/react/20/solid'
 
 import {
   ArrowPathIcon,
@@ -121,7 +122,7 @@ export default function Page() {
             src="/assets/landing4.webp"
             width={500}
             height={500}
-            className="absolute inset-0 -z-10 size-full object-cover"
+            className="absolute inset-0 -z-10 size-full object-cover brightness-60"
             alt='company logo'
           />
           <div className="py-18 sm:py-20 lg:pb-40">
@@ -129,10 +130,10 @@ export default function Page() {
               <div className="mx-auto max-w-2xl text-center">
                 <div className='h-full w-full px-8 py-4 flex justify-center' aria-hidden="true">
                   <Image
-                    src="/assets/logo_black.webp"
+                    src="/assets/logo_transparent.webp"
                     width={500}
                     height={500}
-                    className="rounded-full object-cover bg-white"
+                    className="rounded-full object-cover"
                     alt='company logo'
                   />
                 </div>
@@ -175,8 +176,8 @@ export default function Page() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base/7 font-semibold text-gray-900">
-                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-[#4F714D]">
-                      <feature.icon aria-hidden="true" className="size-6 text-white" />
+                    <div className="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg">
+                      <CheckIcon aria-hidden="true" className="absolute left-0 top-1 h-5 w-5 text-[#4F714D]" />
                     </div>
                     {feature.name}
                   </dt>
