@@ -50,7 +50,7 @@ function classNames(...classes: string[]) {
 export default function Testimonial() {
 
     return (
-        <div className="bg-gray-900 mx-auto mt-22 px-6 sm:mt-26 lg:px-8">
+        <div className="bg-gray-900 mx-auto mt-22 px-10 sm:mt-26 lg:px-20">
             <div>
                 <h2 className="py-10 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                     Customer Reviews
