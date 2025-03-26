@@ -1,15 +1,116 @@
 import Image from 'next/image';
-import Values from "@/ui/Values";
 
+export default function Page() {
 
-export default function Example() {
+    const flooring = (
+        <div className="relative lg:col-span-3">
+            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
+                <Image
+                    src="/assets/cloud-1.webp"
+                    width={500}
+                    height={500}
+                    className="h-80 object-cover object-left w-full"
+                    alt='cloud one'
+                />
+                <div className="p-10 pt-4">
+                    <h3 className="text-sm/4 font-semibold text-[#4F714D]">Flooring</h3>
+                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        We understand that flooring is more than just a surface – it&apos;s the foundation upon which your space is built. Whether you&apos;re envisioning the warm embrace of hardwood in your custom Kalispell home, the durable practicality of tile in your commercial space, or the cozy comfort of carpet in your mountain retreat, our expert flooring installation services ensure a flawless and lasting finish.
+                    </p>
+                </div>
+            </div>
+            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
+        </div>
+    );
 
+    const decks = (
+        <div className="relative lg:col-span-3">
+            <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
+                <Image
+                    src="/assets/cloud-2.webp"
+                    width={500}
+                    height={500}
+                    className="h-80 object-cover object-left lg:object-right w-full"
+                    alt='cloud one'
+                />
+                <div className="p-10 pt-4">
+                    <h3 className="text-sm/4 font-semibold text-[#4F714D]">Decks</h3>
+                    <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                        Outdoor spaces should be as inviting and functional as your indoor living areas. Serving Kalispell and the surrounding Western Rockies region, our expert team specializes in both the installation of stunning new decks and the repair and restoration of existing ones, helping you maximize your enjoyment of Montana&apos;s breathtaking scenery.
+                    </p>
+                </div>
+            </div>
+            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-tr-[2rem]" />
+        </div>
+    );
     return (
-        <div className="bg-white">
-
-            <main className="isolate">
-                Projects to come
-            </main>
+        <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+                <h2 className="text-base/7 font-semibold text-[#4F714D]">Projects</h2>
+                <p className="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+                    Projects for your needs
+                </p>
+                <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+                    {flooring}
+                    {decks}
+                    <div className="relative lg:col-span-2">
+                        <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
+                        <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
+                            {/* <img
+                                alt=""
+                                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
+                                className="h-80 object-cover object-left"
+                            /> */}
+                            <div className="p-10 pt-4">
+                                <h3 className="text-sm/4 font-semibold text-indigo-600">Speed</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Built for power users</p>
+                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                                    Sed congue eros non finibus molestie. Vestibulum euismod augue.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-bl-[2rem]" />
+                    </div>
+                    <div className="relative lg:col-span-2">
+                        <div className="absolute inset-px rounded-lg bg-white" />
+                        <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                            {/* <img
+                                alt=""
+                                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
+                                className="h-80 object-cover"
+                            /> */}
+                            <div className="p-10 pt-4">
+                                <h3 className="text-sm/4 font-semibold text-indigo-600">Integrations</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Connect your favorite tools</p>
+                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                                    Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5" />
+                    </div>
+                    <div className="relative lg:col-span-2">
+                        <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                        <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
+                            {/* <img
+                                alt=""
+                                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
+                                className="h-80 object-cover"
+                            /> */}
+                            <div className="p-10 pt-4">
+                                <h3 className="text-sm/4 font-semibold text-indigo-600">Network</h3>
+                                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">Globally distributed CDN</p>
+                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
+                                    Aenean vulputate justo commodo auctor vehicula in malesuada semper.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
