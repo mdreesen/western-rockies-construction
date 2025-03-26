@@ -9,8 +9,9 @@ export default function HeroLanding() {
                 src="/assets/landing4.webp"
                 width={500}
                 height={500}
+                priority
                 className="absolute inset-0 -z-10 size-full object-cover brightness-85"
-                alt='company logo'
+                alt='Background image of outdoors and mountains'
             />
             <div className="py-8 sm:py-20 lg:pb-40">
                 <div className="mx-auto max-w-7xl">
@@ -20,6 +21,7 @@ export default function HeroLanding() {
                                 src="/assets/logo_transparent.webp"
                                 width={500}
                                 height={500}
+                                priority
                                 className="rounded-full object-cover"
                                 alt='company logo'
                             />
