@@ -52,7 +52,9 @@ export default function Testimonial() {
     return (
         <div className="bg-gray-900 mx-auto mt-22 max-w-7xl px-6 sm:mt-26 lg:px-8">
             <div>
-                <h2 className="sr-only">Customer Reviews</h2>
+                <h2 className="py-10 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                    Customer Reviews
+                </h2>
 
                 <div className="-my-10">
                     {reviews.map((review, reviewIdx) => (

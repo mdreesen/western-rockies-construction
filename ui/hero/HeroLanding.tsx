@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ButtonGoToArrow from '@/components/buttons/ButtonGoToArrow';
 
-export default function Hero() {
+export default function HeroLanding() {
 
     return (
         <div className="relative pt-14">

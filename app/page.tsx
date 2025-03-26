@@ -1,9 +1,7 @@
-import Hero from '@/ui/Hero';
+import HeroLanding from '@/ui/hero/HeroLanding';
 import Feature from '@/ui/Feature';
 import Testimonial from '@/ui/Testimonials';
 import FAQ from '@/ui/FAQ';
-
-
 
 export default function Page() {
 
@@ -12,7 +10,7 @@ export default function Page() {
 
       <main className="isolate">
         {/* Hero section */}
-        <Hero />
+        <HeroLanding />
 
         {/* Feature section */}
         <Feature />
