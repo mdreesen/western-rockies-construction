@@ -6,7 +6,7 @@ export default async function ButtonGoTo({ path, title }: any) {
         <Link href={path}>
             <button
                 type="button"
-                className="text-sm/6 font-semibold text-white"
+                className="text-sm/6 font-semibold text-white p-[14px]"
             >
                 {title} <span aria-hidden="true">→</span>
             </button>
