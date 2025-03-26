@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+    title: "Projects | Western Rockies Construction",
+    description: "Built to Last, Built to Perform",
+};
 
 export default function Page() {
 

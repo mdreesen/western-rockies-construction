@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import Image from 'next/image';
 import HeroAbout from '@/ui/hero/HeroAbout';
 import Mission from '@/ui/Mission';
 import Values from "@/ui/Values";
+
+export const metadata: Metadata = {
+    title: "About | Western Rockies Construction",
+    description: "Built to Last, Built to Perform",
+};
 
 
 export default function Page() {
