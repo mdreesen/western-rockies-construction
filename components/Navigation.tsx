@@ -7,8 +7,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
     { name: 'Main', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'Projects', href: '/projects' },
 ]
 
 export default function Navigation() {
@@ -51,15 +50,17 @@ export default function Navigation() {
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-50" />
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-[75%] overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                className="h-8 w-auto"
-                            />
+                            <Image
+                            src="/assets/logo_nav.webp"
+                            width={500}
+                            height={500}
+                            className="h-auto w-20 object-cover scale-75 bg-white"
+                            alt='company logo'
+                        />
                         </a>
                         <button
                             type="button"
@@ -72,7 +73,7 @@ export default function Navigation() {
                     </div>
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/25">
-                            <div className="space-y-2 py-6">
+                            <div className="space-y-2 py-6 text-right">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
