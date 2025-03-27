@@ -28,15 +28,6 @@ export default function Page() {
                         Locally Owned & Veteran Owned
                     </div>
                 </div>
-                {/* <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <Image
-                        src="/assets/landing.webp"
-                        width={500}
-                        height={500}
-                        className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-                        alt='company logo'
-                    />
-                </div> */}
 
                 {/* Values section */}
                 <Values />
