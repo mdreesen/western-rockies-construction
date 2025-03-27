@@ -76,13 +76,13 @@ export default function Navigation() {
                         <div className="-my-6 divide-y divide-gray-500/25">
                             <div className="space-y-2 py-6 text-right">
                                 {navigation.map((item) => (
-                                    <Link
+                                    <a
                                         key={item.name}
                                         href={item.href}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800"
                                     >
                                         {item.name}
-                                    </Link>
+                                    </a>
                                 ))}
                             </div>
                         </div>

@@ -1,4 +1,10 @@
-import { StarIcon } from '@heroicons/react/20/solid'
+'use client';
+import { EmblaOptionsType } from 'embla-carousel';
+import styles from '@/styles/Carousel.module.css';
+
+import Autoplay from 'embla-carousel-autoplay'
+import useEmblaCarousel from 'embla-carousel-react';
+import { StarIcon } from '@heroicons/react/16/solid';
 
 const reviews = [
     {
@@ -47,19 +53,25 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Testimonial() {
+type PropType = {
+    options?: EmblaOptionsType
+}
+
+const EmblaCarousel: React.FC<PropType> = () => {
+    const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 50 }
+
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 7000 })])
 
     return (
-        <div className="bg-gray-900 mx-auto mt-22 px-10 sm:mt-26 lg:px-20">
-            <div>
-                <h2 className="py-10 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                    Customer Reviews
-                </h2>
-
-                <div className="-my-10">
-                    {reviews.map((review, reviewIdx) => (
-                        <div key={review.id} className="flex space-x-4 text-sm text-white">
-                            <div className={classNames(reviewIdx === 0 ? '' : 'border-t border-gray-200', 'flex-1 py-10')}>
+        <section className={`${styles.embla} bg-gray-900 p-10 mx-auto mt-22 max-w-7xl px-6 sm:mt-26 lg:px-8`}>
+            <h2 className="py-10 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                Customer Reviews
+            </h2>
+            <div className={styles.embla__viewport} ref={emblaRef}>
+                <div className={styles.embla__container}>
+                    {reviews.map((review) => (
+                        <div key={review.id} className={`${styles.embla__slide} flex space-x-4 text-sm text-white`}>
+                            <div className={styles.embla__slide__number}>
                                 <h3 className="font-medium text-white">{review.author}</h3>
 
                                 <div className="mt-4 flex items-center">
@@ -82,6 +94,8 @@ export default function Testimonial() {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
+
+export default EmblaCarousel

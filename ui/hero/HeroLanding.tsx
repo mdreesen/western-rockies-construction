@@ -16,7 +16,7 @@ export default function HeroLanding() {
             <div className="py-8 sm:py-20 lg:pb-40">
                 <div className="mx-auto max-w-7xl">
                     <div className="mx-auto max-w-2xl text-center">
-                        <div className='h-full w-full py-4 flex justify-center' aria-hidden="true">
+                        <div className='h-full w-full flex justify-center' aria-hidden="true">
                             <Image
                                 src="/assets/logo_transparent.webp"
                                 width={500}
