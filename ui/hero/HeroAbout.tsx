@@ -47,7 +47,7 @@ export default function HeroAbout() {
                                 Building Stronger Communities, One Project at a Time
                             </h1>
                             <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                                Western Rockies Construction LLC. is a locally owned and operated, veteran-owned business committed to providing top-notch interior and exterior home services. Whether you're building a new home, planning a remodel, or refreshing your space, we bring the highest standards of quality and craftsmanship to every project. Our dedication to excellence ensures your vision becomes a reality, all while supporting local values and veteran leadership. Let us help you create a home you'll love for years to come.
+                                Western Rockies Construction is your single-source solution for all your construction needs, offering a wide range of services to take your project from initial concept to successful completion. We handle every aspect of the construction process, ensuring quality, efficiency, and seamless coordination.
                             </p>
                         </div>
                         <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">

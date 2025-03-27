@@ -23,7 +23,12 @@ export default function Page() {
                 <Mission />
 
                 {/* Image section */}
-                <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+                <div className="relative h-[12rem] bg-fixed bg-no-repeat bg-cover bg-center mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8" style={{ backgroundImage: "url('/assets/about.webp')" }}>
+                    <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold text-center">
+                        Locally Owned & Veteran Owned
+                    </div>
+                </div>
+                {/* <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
                     <Image
                         src="/assets/landing.webp"
                         width={500}
@@ -31,7 +36,7 @@ export default function Page() {
                         className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
                         alt='company logo'
                     />
-                </div>
+                </div> */}
 
                 {/* Values section */}
                 <Values />

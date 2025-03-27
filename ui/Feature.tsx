@@ -44,7 +44,7 @@ export default function Feature() {
                     Everything you need
                 </p>
                 <p className="mt-6 text-pretty text-lg/8 text-gray-600">
-                    Western Rockies Construction is your single-source solution for all your construction needs, offering a wide range of services to take your project from initial concept to successful completion. We handle every aspect of the construction process, ensuring quality, efficiency, and seamless coordination.
+                    Western Rockies Construction LLC. is a locally owned and operated, veteran-owned business committed to providing top-notch interior and exterior home services. Whether you're building a new home, planning a remodel, or refreshing your space, we bring the highest standards of quality and craftsmanship to every project. Our dedication to excellence ensures your vision becomes a reality, all while supporting local values and veteran leadership. Let us help you create a home you'll love for years to come.
                 </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
