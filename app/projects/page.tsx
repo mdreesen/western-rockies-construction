@@ -13,7 +13,7 @@ export default function Page() {
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
                 <Image
-                    src="/assets/cloud-1.webp"
+                    src="/assets/projects/flooring/flooring.webp"
                     width={500}
                     height={500}
                     className="h-80 object-cover object-left w-full"
@@ -35,7 +35,7 @@ export default function Page() {
             <div className="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                 <Image
-                    src="/assets/cloud-2.webp"
+                    src="/assets/projects/decks/decks.webp"
                     width={500}
                     height={500}
                     className="h-80 object-cover object-left lg:object-right w-full"
@@ -57,7 +57,7 @@ export default function Page() {
             <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
                 <Image
-                    src="/assets/cloud-1.webp"
+                    src="/assets/projects/fencing/fencing.webp"
                     width={500}
                     height={500}
                     className="h-80 object-cover object-left"
@@ -79,7 +79,7 @@ export default function Page() {
             <div className="absolute inset-px rounded-lg bg-white" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <Image
-                    src="/assets/cloud-1.webp"
+                    src="/assets/projects/framing/framing.webp"
                     width={500}
                     height={500}
                     className="h-80 object-cover"
@@ -101,7 +101,7 @@ export default function Page() {
             <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                 <Image
-                    src="/assets/cloud-1.webp"
+                    src="/assets/projects/siding/siding.webp"
                     width={500}
                     height={500}
                     className="h-80 object-cover"
