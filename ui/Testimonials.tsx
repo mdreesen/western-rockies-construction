@@ -60,7 +60,7 @@ type PropType = {
 const EmblaCarousel: React.FC<PropType> = () => {
     const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 50 }
 
-    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 7000, stopOnInteraction: false })])
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 6000, stopOnInteraction: false })])
 
     return (
         <section className={`${styles.embla} bg-gray-900 p-10 mx-auto mt-22 max-w-7xl px-6 sm:mt-26 lg:px-8 xl:rounded-3xl`}>

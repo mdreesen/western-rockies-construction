@@ -4,7 +4,7 @@ import ButtonGoToArrow from '@/components/buttons/ButtonGoToArrow';
 export default function HeroLanding() {
 
     return (
-        <div className="relative pt-14">
+        <div className="relative pt-14 h-[100vh]">
             <Image
                 src="/assets/landing4.webp"
                 width={500}
