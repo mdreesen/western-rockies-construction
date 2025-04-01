@@ -34,7 +34,7 @@ const faqs = [
         id: 5,
         question: "Are you licensed and insured to operate as a construction company in Montana? Can you provide proof of this?",
         answer:
-            "Yes, Wester Rockies Construction is fully licensed and insured to operate as a construction company in the state of Montana. We maintain all necessary licenses and carry comprehensive insurance coverage to protect our clients and our team. We are happy to provide you with proof of our credentials upon request.",
+            "Yes, Western Rockies Construction is fully licensed and insured to operate as a construction company in the state of Montana. We maintain all necessary licenses and carry comprehensive insurance coverage to protect our clients and our team. We are happy to provide you with proof of our credentials upon request.",
     },
 ];
 

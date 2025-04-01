@@ -22,10 +22,10 @@ export default function Navigation() {
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <Image
-                            src="/assets/logo_nav.webp"
+                            src="/assets/logo_nav_transparent.webp"
                             width={500}
                             height={500}
-                            className="h-auto w-20 object-cover scale-75 bg-white"
+                            className="h-auto w-20 object-cover scale-75"
                             alt='company logo'
                         />
                     </Link>

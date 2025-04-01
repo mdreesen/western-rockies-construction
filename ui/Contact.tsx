@@ -1,4 +1,4 @@
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 import Map from './Map';
 
@@ -28,8 +28,8 @@ export default function Contact() {
                                     <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    <a href="mailto: josiahwlkr@yahoo.com" className="hover:text-gray-900">
-                                        josiahwlkr@yahoo.com
+                                    <a href="mailto:josiah@westernrockiesconstruction.com" className="hover:text-gray-900">
+                                        josiah@westernrockiesconstruction.com
                                     </a>
                                 </dd>
                             </div>

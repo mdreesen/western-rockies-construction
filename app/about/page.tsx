@@ -24,8 +24,10 @@ export default function Page() {
 
                 {/* Image section */}
                 <div className="relative h-[12rem] bg-fixed bg-no-repeat bg-cover bg-center mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8" style={{ backgroundImage: "url('/assets/about.webp')" }}>
-                    <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold text-center">
-                        Locally Owned & Veteran Owned
+                    <div className="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">
+                        <span>
+                            Locally &<br />Veteran Owned
+                        </span>
                     </div>
                 </div>
 
