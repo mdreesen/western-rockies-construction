@@ -16,7 +16,7 @@ export default function Page() {
                     src="/assets/projects/flooring/flooring.webp"
                     width={500}
                     height={500}
-                    className="h-80 object-cover object-left w-full"
+                    className="h-80 object-cover w-full object-center"
                     alt='cloud one'
                 />
                 <div className="p-10 pt-4">
@@ -38,7 +38,7 @@ export default function Page() {
                     src="/assets/projects/decks/decks.webp"
                     width={500}
                     height={500}
-                    className="h-80 object-cover object-left lg:object-right w-full"
+                    className="h-80 object-cover object-center w-full"
                     alt='cloud one'
                 />
                 <div className="p-10 pt-4">
@@ -60,7 +60,7 @@ export default function Page() {
                     src="/assets/projects/fencing/fencing.webp"
                     width={500}
                     height={500}
-                    className="h-80 object-cover object-left"
+                    className="h-80 object-cover object-center"
                     alt='cloud one'
                 />
                 <div className="p-10 pt-4">
@@ -82,7 +82,7 @@ export default function Page() {
                     src="/assets/projects/framing/framing.webp"
                     width={500}
                     height={500}
-                    className="h-80 object-cover"
+                    className="h-80 object-cover object-center"
                     alt='cloud one'
                 />
                 <div className="p-10 pt-4">
@@ -104,7 +104,7 @@ export default function Page() {
                     src="/assets/projects/siding/siding.webp"
                     width={500}
                     height={500}
-                    className="h-80 object-cover"
+                    className="h-80 object-cover object-center"
                     alt='cloud one'
                 />
                 <div className="p-10 pt-4">
