@@ -14,8 +14,8 @@ export default function Page() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
                 <Image
                     src="/assets/projects/flooring/flooring.webp"
-                    width={500}
-                    height={500}
+                    width={1022}
+                    height={471}
                     className="h-80 object-cover w-full object-center"
                     alt='cloud one'
                 />
@@ -36,8 +36,8 @@ export default function Page() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                 <Image
                     src="/assets/projects/decks/decks.webp"
-                    width={500}
-                    height={500}
+                    width={554}
+                    height={255}
                     className="h-80 object-cover object-center w-full"
                     alt='cloud one'
                 />
