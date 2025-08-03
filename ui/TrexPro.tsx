@@ -114,7 +114,7 @@ export default function TrexPro() {
                         href="https://www.trex.com/find-a-builder/details/?PRO=001RN00000OwDU2"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-10 py-5 border border-transparent text-lg font-bold rounded-full shadow-lg bg-green-600 hover:bg-green-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                        className="inline-flex items-center px-10 py-5 border border-transparent text-lg font-bold rounded-full shadow-lg bg-[#4F714D] hover:bg-green-700 text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                     >
                         Explore TrexPro® on Trex.com
                         {/* Inline SVG for External Link */}

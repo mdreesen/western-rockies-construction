@@ -63,7 +63,7 @@ const EmblaCarousel: React.FC<PropType> = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [Autoplay({ delay: 6000, stopOnInteraction: false })])
 
     return (
-        <section className={`${styles.embla} bg-gray-900 p-10 mx-auto max-w-7xl px-6 lg:px-8 xl:rounded-3xl`}>
+        <section className={`${styles.embla} bg-gray-900 p-10 lg:px-60`}>
             <h2 className="py-10 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 Customer Reviews
             </h2>
