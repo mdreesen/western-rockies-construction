@@ -37,7 +37,7 @@ const features = [
 export default function Feature() {
 
     return (
-        <div className="mx-auto mt-22 max-w-7xl px-6 sm:mt-26 lg:px-8">
+        <div className="mx-auto mt-22 mb-22 max-w-7xl px-6 sm:mt-26 sm:mb-26 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="text-base/7 font-semibold text-[#4F714D]">Got you covered</h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
