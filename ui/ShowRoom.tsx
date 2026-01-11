@@ -16,16 +16,16 @@ type Product = {
 
 // --- Inventory Data ---
 const INVENTORY: Product[] = [
-  { id: 'cedar-floor', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/canvas-deck.webp', thumbnail: '🟫', description: 'Natural rot-resistant timber.' },
-  { id: 'composite-floor', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/layers/floor-composite.png', thumbnail: '⬛', description: 'Low-maintenance durability.' },
-  { id: 'cable-rail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/layers/rail-cable.png', thumbnail: '🚥', description: 'Modern, minimalist view.' },
-  { id: 'glass-rail', name: 'Alpine Glass', category: 'railing', imageLayer: '/layers/rail-glass.png', thumbnail: '🖼️', description: 'Maximum wind protection.' },
+  { id: 'deck_cedar', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/deck_cedar.webp', thumbnail: '🟫', description: 'Natural rot-resistant timber.' },
+  { id: 'deck_composite', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/assets/showroom/deck_composite.webp', thumbnail: '⬛', description: 'Low-maintenance durability.' },
+  { id: '_blackrail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', thumbnail: '🚥', description: 'Modern, minimalist view.' },
+  { id: '_glassrail', name: 'Alpine Glass', category: 'railing', imageLayer: '/assets/showroom/deck_composite_glassrail.webp', thumbnail: '🖼️', description: 'Maximum wind protection.' },
 ];
 
 export default function DeckShowRoom() {
   // State holds the ID of the selected product for each category
   const [selections, setSelections] = useState<Record<string, string>>({
-    floor: 'cedar-floor',
+    floor: 'deck_cedar',
     railing: '',
     lighting: '',
   });
@@ -44,7 +44,7 @@ export default function DeckShowRoom() {
       <div className="lg:col-span-2 relative aspect-[16/10] bg-neutral-900 rounded-2xl overflow-hidden border border-white/10">
         {/* 1. Base Image (The "Skeleton" of the deck) */}
         <img 
-          src="/assets/showroom/canvas-deck.webp" 
+          src="/assets/showroom/deck_cedar.webp" 
           className="absolute inset-0 w-full h-full object-cover opacity-50"
           alt="Deck Base" 
         />
@@ -58,7 +58,7 @@ export default function DeckShowRoom() {
             return (
               <motion.img
                 key={product.id}
-                src={product.imageLayer}
+                src={`/assets/showroom/${selections.floor}${selections.railing ?? ''}.webp`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -70,9 +70,9 @@ export default function DeckShowRoom() {
           })}
         </AnimatePresence>
 
-        <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full text-xs font-mono tracking-widest uppercase">
+        {/* <div className="absolute top-4 left-4 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full text-xs font-mono tracking-widest uppercase">
           Live Preview: Western Rockies Build v1.0
-        </div>
+        </div> */}
       </div>
 
       {/* 🛠️ Right: The Control Panel */}
