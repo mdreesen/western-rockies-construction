@@ -18,7 +18,7 @@ export default function HeroLanding() {
                     <div className="mx-auto max-w-2xl text-center">
                         <div className='h-full w-full flex justify-center' aria-hidden="true">
                             <Image
-                                src="/assets/logo_transparent.webp"
+                                src="/assets/logo_transparent_bare.webp"
                                 width={500}
                                 height={500}
                                 priority
