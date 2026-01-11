@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, Info, Eraser } from 'lucide-react';
+import { Check, Info, Eraser, } from 'lucide-react';
 
 // --- Types ---
 type Product = {
@@ -19,6 +19,7 @@ const INVENTORY: Product[] = [
   { id: 'deck_cedar', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/deck_cedar.webp', thumbnail: '🟫', description: 'Natural rot-resistant timber.' },
   { id: 'deck_composite', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/assets/showroom/deck_composite.webp', thumbnail: '⬛', description: 'Low-maintenance durability.' },
   { id: '_blackrail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', thumbnail: '🚥', description: 'Modern, minimalist view.' },
+  { id: '_cedarrail', name: 'Cedar Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', thumbnail: '🚥', description: 'Modern, minimalist view.' },
   { id: '_glassrail', name: 'Alpine Glass', category: 'railing', imageLayer: '/assets/showroom/deck_composite_glassrail.webp', thumbnail: '🖼️', description: 'Maximum wind protection.' },
 ];
 
@@ -38,14 +39,14 @@ export default function DeckShowRoom() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto p-6 grid lg:grid-cols-3 gap-8 bg-[#1a1c1e] text-white rounded-3xl shadow-2xl overflow-hidden">
+    <section className="max-w-7xl mx-auto p-2 grid lg:grid-cols-3 gap-8 text-white overflow-hidden">
       
       {/* 🏔️ Left/Middle: The Interactive Canvas */}
-      <div className="lg:col-span-2 relative aspect-[16/10] bg-neutral-900 rounded-2xl overflow-hidden border border-white/10">
+      <div className="bg-white lg:col-span-2 relative aspect-[16/10] rounded-lg verflow-hidden border border-white/10">
         {/* 1. Base Image (The "Skeleton" of the deck) */}
         <img 
           src="/assets/showroom/deck_cedar.webp" 
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg"
           alt="Deck Base" 
         />
 
@@ -63,7 +64,7 @@ export default function DeckShowRoom() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute inset-0 w-full h-full object-cover z-10"
+                className="absolute inset-0 w-full h-full object-cover z-10 rounded-lg"
                 alt={product.name}
               />
             );
@@ -76,7 +77,7 @@ export default function DeckShowRoom() {
       </div>
 
       {/* 🛠️ Right: The Control Panel */}
-      <div className="flex flex-col gap-6">
+      <div className="bg-[#1a1c1e] flex flex-col gap-6 p-4 rounded-lg">
         <div>
           <h2 className="text-3xl font-bold tracking-tighter italic">BUILD YOUR DECK</h2>
           <p className="text-gray-400 text-sm">Select materials to customize your mountain retreat.</p>
@@ -84,7 +85,7 @@ export default function DeckShowRoom() {
 
         {/* Category: Flooring */}
         <div className="space-y-3">
-          <label className="text-xs font-black uppercase text-orange-500">1. Decking Surface</label>
+          <label className="text-xs font-black uppercase text-[#4F714D]">1. Decking Surface</label>
           <div className="grid grid-cols-2 gap-2">
             {INVENTORY.filter(p => p.category === 'floor').map(p => (
               <SelectionCard 
@@ -99,7 +100,7 @@ export default function DeckShowRoom() {
 
         {/* Category: Railing */}
         <div className="space-y-3">
-          <label className="text-xs font-black uppercase text-orange-500">2. Safety & Railing</label>
+          <label className="text-xs font-black uppercase text-[#4F714D]">2. Safety & Railing</label>
           <div className="grid grid-cols-2 gap-2">
             {INVENTORY.filter(p => p.category === 'railing').map(p => (
               <SelectionCard 
@@ -129,12 +130,12 @@ function SelectionCard({ product, isActive, onClick }: { product: Product, isAct
     <button
       onClick={onClick}
       className={`relative p-3 rounded-xl border-2 text-left transition-all ${
-        isActive ? 'border-orange-500 bg-orange-500/10' : 'border-white/10 bg-white/5 hover:bg-white/10'
+        isActive ? 'border-[#4F714D] bg-[#4F714D]/10' : 'border-white/10 bg-white/5 hover:bg-white/10'
       }`}
     >
       <div className="flex justify-between items-start mb-1">
-        <span className="text-xl">{product.thumbnail}</span>
-        {isActive && <Check size={16} className="text-orange-500" />}
+        {/* <span className="text-xl">{product.thumbnail}</span> */}
+        {isActive && <Check size={16} className="text-[#4F714D]" />}
       </div>
       <p className="font-bold text-sm leading-tight">{product.name}</p>
       <p className="text-[10px] text-gray-400 mt-1 line-clamp-1">{product.description}</p>
