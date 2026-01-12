@@ -38,6 +38,16 @@ export default function DeckShowRoom() {
     }));
   };
 
+  /*
+  
+  Falls in line with trex colors and names
+  
+  Show the warenties
+
+  
+
+  */
+
   return (
     <section className="max-w-7xl mx-auto p-2 grid lg:grid-cols-3 gap-8 text-white overflow-hidden">
 
