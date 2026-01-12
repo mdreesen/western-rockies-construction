@@ -8,19 +8,19 @@ import { Check, Info, Eraser, } from 'lucide-react';
 type Product = {
   id: string;
   name: string;
-  category: 'floor' | 'railing' | 'lighting';
+  category: 'floor' | 'railing' | 'lighting' | 'overhang';
   imageLayer: string; // URL to transparent PNG layer
-  thumbnail: string;
   description: string;
 };
 
 // --- Inventory Data ---
 const INVENTORY: Product[] = [
-  { id: 'deck_cedar', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/deck_cedar.webp', thumbnail: '🟫', description: 'Natural rot-resistant timber.' },
-  { id: 'deck_composite', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/assets/showroom/deck_composite.webp', thumbnail: '⬛', description: 'Low-maintenance durability.' },
-  { id: '_blackrail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', thumbnail: '🚥', description: 'Modern, minimalist view.' },
-  { id: '_cedarrail', name: 'Cedar Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', thumbnail: '🚥', description: 'Modern, minimalist view.' },
-  { id: '_glassrail', name: 'Alpine Glass', category: 'railing', imageLayer: '/assets/showroom/deck_composite_glassrail.webp', thumbnail: '🖼️', description: 'Maximum wind protection.' },
+  { id: 'deck_cedar', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/deck_cedar.webp', description: 'Natural rot-resistant timber.' },
+  { id: 'deck_composite', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/assets/showroom/deck_composite.webp', description: 'Low-maintenance durability.' },
+  { id: '_blackrail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', description: 'Modern, minimalist view.' },
+  { id: '_cedarrail', name: 'Cedar Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', description: 'Modern, minimalist view.' },
+  { id: '_glassrail', name: 'Alpine Glass', category: 'railing', imageLayer: '/assets/showroom/deck_composite_glassrail.webp', description: 'Maximum wind protection.' },
+  { id: '_overhang', name: 'Over hang', category: 'overhang', imageLayer: '/assets/showroom/deck_composite_glassrail_overhang.webp', description: 'Sun protection and minimal element protection.' },
 ];
 
 export default function DeckShowRoom() {
@@ -40,14 +40,14 @@ export default function DeckShowRoom() {
 
   return (
     <section className="max-w-7xl mx-auto p-2 grid lg:grid-cols-3 gap-8 text-white overflow-hidden">
-      
+
       {/* 🏔️ Left/Middle: The Interactive Canvas */}
-      <div className="bg-white lg:col-span-2 relative aspect-[16/10] rounded-lg verflow-hidden border border-white/10">
+      <div className="bg-white lg:col-span-2 relative aspect-16/10 rounded-lg verflow-hidden border border-white/10">
         {/* 1. Base Image (The "Skeleton" of the deck) */}
-        <img 
-          src="/assets/showroom/deck_cedar.webp" 
+        <img
+          src="/assets/showroom/deck_cedar.webp"
           className="absolute inset-0 w-full h-full object-cover opacity-50 rounded-lg"
-          alt="Deck Base" 
+          alt="Deck Base"
         />
 
         {/* 2. Dynamic Layers */}
@@ -59,7 +59,7 @@ export default function DeckShowRoom() {
             return (
               <motion.img
                 key={product.id}
-                src={`/assets/showroom/${selections.floor}${selections.railing ?? ''}.webp`}
+                src={`/assets/showroom/${selections.floor}${selections.railing ?? ''}${selections.overhang ?? ''}.webp`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -88,11 +88,11 @@ export default function DeckShowRoom() {
           <label className="text-xs font-black uppercase text-[#4F714D]">1. Decking Surface</label>
           <div className="grid grid-cols-2 gap-2">
             {INVENTORY.filter(p => p.category === 'floor').map(p => (
-              <SelectionCard 
-                key={p.id} 
-                product={p} 
-                isActive={selections.floor === p.id} 
-                onClick={() => toggleProduct('floor', p.id)} 
+              <SelectionCard
+                key={p.id}
+                product={p}
+                isActive={selections.floor === p.id}
+                onClick={() => toggleProduct('floor', p.id)}
               />
             ))}
           </div>
@@ -103,17 +103,32 @@ export default function DeckShowRoom() {
           <label className="text-xs font-black uppercase text-[#4F714D]">2. Safety & Railing</label>
           <div className="grid grid-cols-2 gap-2">
             {INVENTORY.filter(p => p.category === 'railing').map(p => (
-              <SelectionCard 
-                key={p.id} 
-                product={p} 
-                isActive={selections.railing === p.id} 
-                onClick={() => toggleProduct('railing', p.id)} 
+              <SelectionCard
+                key={p.id}
+                product={p}
+                isActive={selections.railing === p.id}
+                onClick={() => toggleProduct('railing', p.id)}
               />
             ))}
           </div>
         </div>
 
-        <button 
+        {/* Category: Overhang */}
+        <div className="space-y-3">
+          <label className="text-xs font-black uppercase text-[#4F714D]">2. Safety & Railing</label>
+          <div className="grid grid-cols-2 gap-2">
+            {INVENTORY.filter(p => p.category === 'overhang').map(p => (
+              <SelectionCard
+                key={p.id}
+                product={p}
+                isActive={selections.overhang === p.id}
+                onClick={() => toggleProduct('overhang', p.id)}
+              />
+            ))}
+          </div>
+        </div>
+
+        <button
           onClick={() => setSelections({ floor: '', railing: '', lighting: '' })}
           className="mt-auto flex items-center justify-center gap-2 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition-colors text-sm"
         >
@@ -129,9 +144,8 @@ function SelectionCard({ product, isActive, onClick }: { product: Product, isAct
   return (
     <button
       onClick={onClick}
-      className={`relative p-3 rounded-xl border-2 text-left transition-all ${
-        isActive ? 'border-[#4F714D] bg-[#4F714D]/10' : 'border-white/10 bg-white/5 hover:bg-white/10'
-      }`}
+      className={`relative p-3 rounded-xl border-2 text-left transition-all ${isActive ? 'border-[#4F714D] bg-[#4F714D]/10' : 'border-white/10 bg-white/5 hover:bg-white/10'
+        }`}
     >
       <div className="flex justify-between items-start mb-1">
         {/* <span className="text-xl">{product.thumbnail}</span> */}
