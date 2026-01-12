@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, Info, Eraser, } from 'lucide-react';
+import { Check, Eraser, } from 'lucide-react';
+import { productDeckFloor, productRailing, productOverhang } from '@/utils/productsTrex';
 
 // --- Types ---
 type Product = {
@@ -14,14 +15,7 @@ type Product = {
 };
 
 // --- Inventory Data ---
-const INVENTORY: Product[] = [
-  { id: 'deck_cedar', name: 'Western Red Cedar', category: 'floor', imageLayer: '/assets/showroom/deck_cedar.webp', description: 'Natural rot-resistant timber.' },
-  { id: 'deck_composite', name: 'Slate Grey Composite', category: 'floor', imageLayer: '/assets/showroom/deck_composite.webp', description: 'Low-maintenance durability.' },
-  { id: '_blackrail', name: 'Black Cable Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', description: 'Modern, minimalist view.' },
-  { id: '_cedarrail', name: 'Cedar Rail', category: 'railing', imageLayer: '/assets/showroom/deck_composite_blackrail.webp', description: 'Modern, minimalist view.' },
-  { id: '_glassrail', name: 'Alpine Glass', category: 'railing', imageLayer: '/assets/showroom/deck_composite_glassrail.webp', description: 'Maximum wind protection.' },
-  { id: '_overhang', name: 'Over hang', category: 'overhang', imageLayer: '/assets/showroom/deck_composite_glassrail_overhang.webp', description: 'Sun protection and minimal element protection.' },
-];
+const INVENTORY: Product[] = [...productDeckFloor(), ...productRailing(), ...productOverhang()];
 
 export default function DeckShowRoom() {
   // State holds the ID of the selected product for each category
@@ -44,7 +38,7 @@ export default function DeckShowRoom() {
   
   Show the warenties
 
-  
+
 
   */
 
