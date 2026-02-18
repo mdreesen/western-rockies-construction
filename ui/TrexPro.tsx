@@ -18,7 +18,7 @@ export default function TrexPro() {
                             alt='company logo'
                         />
                     </div> */}
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-500">
+                    <span className="bg-clip-text text-transparent bg-linear-to-r from-green-400 to-emerald-500">
                         TrexPro®
                     </span>{" "}
                     Affiliated and Certified
@@ -30,20 +30,6 @@ export default function TrexPro() {
 
                 {/* Logo and Benefits Section */}
                 <div className="mt-16 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
-                    {/* TrexPro® Logo/Image */}
-                    {/* <div className="lg:w-1/3 flex-shrink-0">
-                        <div className="bg-gray-900 p-8 rounded-3xl shadow-2xl border border-gray-800 transform transition-transform duration-300 hover:scale-105">
-                            <Image
-                                src="/assets/affiliates/trex_logo.webp"
-                                width={150}
-                                height={150}
-                                priority
-                                className="rounded-full object-cover"
-                                alt='company logo'
-                            />
-                        </div>
-                    </div> */}
-
                     {/* Benefits List */}
                     <div className="lg:w-2/3 text-left space-y-6 mt-10 lg:mt-0">
                         <h3 className="text-2xl font-semibold">
@@ -54,7 +40,7 @@ export default function TrexPro() {
                                 {/* Inline SVG for Check Circle */}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="flex-shrink-0 mt-1 h-6 w-6 text-emerald-500 mr-3"
+                                    className="shrink-0 mt-1 h-6 w-6 text-emerald-500 mr-3"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
                                 >
@@ -90,7 +76,7 @@ export default function TrexPro() {
                                 {/* Inline SVG for Check Circle */}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="flex-shrink-0 mt-1 h-6 w-6 text-emerald-500 mr-3"
+                                    className="shrink-0 mt-1 h-6 w-6 text-emerald-500 mr-3"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
                                 >
