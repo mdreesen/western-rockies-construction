@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy | Western Rockies Construction",
+    description: "Built to Last, Built to Perform",
+};
+
 export default function Page() {
     return (
         <div className="bg-white text-gray-700 flex flex-col py-15 px-10 gap-4">

@@ -26,19 +26,6 @@ export default function Contact() {
                                     <textarea id="message" name="message" rows={5} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lego-blue" required></textarea>
                                 </div>
 
-                                {/* <div className="flex gap-1 mb-4">
-                                    <div className='flex'>
-                                        <input id="privacy" type="checkbox" v-model="credentials.privacy_policy" required
-                                            className="rounded-md border-gray-600 text-purple-500 focus:ring-purple-500 transition-colors duration-200" />
-                                    </div>
-                                    <div className="flex gap-1">
-                                        <span>I agree to the</span>
-                                        <Link href="/privacy-policy" className="-m-1.5 p-1.5 text-blue-400 hover:underline transition-colors">
-                                            Privacy Policy
-                                        </Link>
-                                    </div>
-                                </div> */}
-
                                 <div className="flex gap-1 mb-4">
                                     <div className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
                                         <div className="flex items-start">
