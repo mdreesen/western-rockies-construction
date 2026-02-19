@@ -10,7 +10,7 @@ export default function Page() {
         <div className="bg-white text-gray-700 flex flex-col py-15 px-10 gap-4">
 
             <h1 className="font-bold text-center">Privacy Policy for Western Rockies Construction</h1>
-            <p>Effective Date: February 19, 2026</p>
+            <p>Effective Date: February 18, 2026</p>
             <p>At Western Rockies Construction, we value the trust you place in us to build and improve your property. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our services or visit our website.</p>
 
             <h2>1. Information We Collect To provide accurate estimates and high-quality craftsmanship, we may collect the following:</h2>
