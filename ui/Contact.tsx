@@ -7,10 +7,10 @@ export default function Contact() {
         <div className="relative isolate bg-white">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 p-1.75">
                 <div className="h-full items-center relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48 flex justify-center">
-                    <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg flex flex-col items-center">
+                    <div className="max-w-full flex flex-col items-center">
                         <h2 className="text-4xl font-bold tracking-tight text-gray-900">Get in touch</h2>
                         {/* Left Column: Contact Form */}
-                        <div className="bg-white w-75 text-gray-700 p-8 rounded-lg shadow-lg sm:w-113.75">
+                        <div className="bg-white max-w-full text-gray-700 p-8 rounded-lg shadow-lg">
                             <h2 className="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
                             <form action={`https://formspree.io/f/${process.env.FORM_SPREE_KEY}`} method="POST">
                                 <div className="mb-4">

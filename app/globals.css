@@ -28,4 +28,9 @@ body {
 
 textarea {
   field-sizing: content;
+  box-sizing: border-box; /* Ensures padding/borders don't affect width */
+  max-width: 100%;       /* Prevents overflow */
+  width: 100%;           /* Fills container, but not beyond */
+  height: auto;          /* Optional: allows height to be controlled */
+  overflow: auto; 
 };
