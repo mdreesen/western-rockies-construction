@@ -9,73 +9,46 @@ export default function Page() {
     return (
         <div className="bg-white text-gray-700 flex flex-col py-15 px-10 gap-4">
 
-            <h1>Western Rockies Construction Privacy Policy</h1>
+            <h1 className="font-bold text-center">Privacy Policy for Western Rockies Construction</h1>
+            <p>Effective Date: February 19, 2026</p>
+            <p>At Western Rockies Construction, we value the trust you place in us to build and improve your property. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our services or visit our website.</p>
 
-            This Privacy Policy explains how Western Rockies Construction (&apos;we,&apos; &apos;us,&apos; or &apos;our&apos;) collects, uses, shares, and secures your information when you use our mobile application (the &apos;App&apos;).
+            <h2>1. Information We Collect To provide accurate estimates and high-quality craftsmanship, we may collect the following:</h2>
+            <div className="pl-4">
+                <p> • Contact Information: Name, phone number, email address, and physical mailing address.</p>
+                <p> • Project Details: Property blueprints, site photos, permit information, and specific renovation requirements.</p>
+                <p> • Financial Data: Billing addresses and payment details for processing deposits and final invoices.</p>
+                <p> • Communication History: Emails, texts, and notes from site visits.</p>
+            </div>
 
-            <h2>1. Information We Collect</h2>
+            <h2>2. How We Use Your Information We don’t sell your data to third parties. We use your information strictly to:</h2>
+            <div className="pl-4">
+                <p> • Provide quotes and fulfill contract obligations.</p>
+                <p> • Coordinate with subcontractors and suppliers (e.g., getting materials delivered to your site).</p>
+                <p> • Obtain necessary building permits from local authorities.</p>
+                <p> • Send project updates and occasional promotional offers (which you can opt out of at any time).</p>
+            </div>
 
-            Personal Information:
+            <h2>3. Data Sharing and Security We only share your information with third parties when necessary to complete your project, such as:</h2>
+            <div className="pl-4">
+                <p> • Subcontractors: Specialized trades (plumbers, electricians) who need your address and project scope.</p>
+                <p> • Legal Compliance: When required by law or to protect our legal rights.</p>
+                <p> • We implement industry-standard security measures to protect your data from unauthorized access, both digitally and in our physical files.</p>
+            </div>
 
-            Account Information: When you create an Western Rockies Construction account, we may collect your email address, username, and password.
-            Usage Data: We may collect information about how you use the App, such as the features you access, the actions you take within the App, and the time and duration of your usage.
-            Device Information: We may collect information about your device, such as your device type, operating system, and unique device identifiers.
-            Location Information: With your consent, we may collect your location information to provide location-based services or enhance your experience.
-            Non-Personal Information: We may also collect non-personal information, such as aggregated usage data and anonymous device information, which cannot be used to identify you personally.
+            <h2>4. Your Rights Depending on your location, you may have the right to:</h2>
+            <div className="pl-4">
+                <p> • Request a copy of the personal data we hold about you.</p>
+                <p> • Request that we correct or delete your information (subject to legal and record-keeping requirements).</p>
+                <p> • Withdraw consent for marketing communications.</p>
+            </div>
 
-            <h2>2. How We Use Your Information</h2>
-            We use the collected information to:
-            Provide and maintain the App.
-            Improve the App&apos;s functionality and user experience.
-            Personalize your experience with the App.
-            Communicate with you about the App, including updates and promotions.
-            Analyze usage trends and gather demographic information.
-            Ensure the security and integrity of the App.
-            Comply with legal and regulatory requirements.
-
-            <h2>3. Data Sharing and Disclosure</h2>
-            We may share your information with:
-            Third-party service providers: We may share your information with third-party service providers who assist us in providing and maintaining the App, such as analytics providers, cloud service providers, and customer support providers.
-            Business partners: We may share your information with our business partners for purposes such as joint marketing initiatives or co-branded services.
-            Legal authorities: We may disclose your information to law enforcement or other authorities if required by law or in response to a valid legal request.
-
-            <h2>4. Data Security</h2>
-            We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee the absolute security of your information.
-
-            <h2>5. Permissions and APIs</h2>
-            The App may request access to certain device permissions, such as location, camera, and storage, to provide specific functionalities. You can control these permissions through your device settings.
-            The App may use third-party APIs, such as Google Maps, to provide certain features. These APIs may collect and use your information in accordance with their own privacy policies.
-
-            <h2>6. Device and Network Abuse</h2>
-            The App prohibits any use that could harm or interfere with the functioning of the App or the devices or networks of others. This includes, but is not limited to:
-
-            Malware and viruses: Introducing or spreading malware, viruses, or other harmful code.
-            Spamming: Sending unsolicited messages or engaging in other forms of spam.
-            Unauthorized access: Attempting to gain unauthorized access to the App or other systems.
-
-            <h2>7. Deceptive Behavior and Misrepresentation</h2>
-            The App prohibits any deceptive or misleading behavior, including:
-
-            Misrepresenting yourself: Using false or misleading information when using the App.
-            Impersonating others: Impersonating another user or entity.
-            Engaging in fraudulent activities: Using the App for any fraudulent or illegal activities.
-
-            <h2>8. Google Play&apos;s Target API Level Privacy</h2>
-            We comply with Google Play&apos;s requirements regarding the target API level and user privacy.
-
-
-            <h2>9. Children&apos;s Privacy</h2>
-            The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.
-
-            <h2>10. Changes to this Privacy Policy</h2>
-            We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated policy on the App or by other appropriate means.
-
-            <h2>11. Limitation of Liability</h2>
-            This Privacy Policy outlines our general practices for collecting, using, and disclosing information. However, we cannot guarantee absolute security. You assume the risk of unauthorized access to, disclosure of, or alteration of your information. We are not liable for any damages that may result from such unauthorized access, disclosure, or alteration.
-
-            <h2>12. Contact Us</h2>
-
-            If you have any questions about this Privacy Policy, please contact us.
+            <h2>5. Contact Us If you have questions regarding this policy or how your data is handled, please reach out to us:</h2>
+            <div className="pl-4">
+                <p> • Western Rockies Construction Email: josiah@westernrockiesconstruction.com</p>
+                <p> • Phone: +1 (406) 871-8101</p>
+                {/* <p> • Address: [Insert Business Address]</p> */}
+            </div>
         </div>
     )
 }
